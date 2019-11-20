@@ -1,17 +1,17 @@
 import React from 'react';
 
-export default function Photo() {
+export default function Photo(props) {
 
 
     return (
         <div>
             <h1>NASA Photo of the Day</h1>
-            <h2>photo title</h2>
-            <img src="" alt="random image from NASA" />
+            <h2>{props.title}</h2>
+            <img src={props.url} alt="NASA daily" />
             <div>
-                <p>explanation</p>
-                <p>date</p>
-                <p>copyright</p>
+                <p>{props.explanation}</p>
+                <p>Date: {props.date}</p>
+                <p>{props.copyright}</p>
             </div>
         </div>
     )

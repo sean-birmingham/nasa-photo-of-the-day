@@ -18,7 +18,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Photo title={photoData.title} url={photoData.url} explanation={photoData.explanation} date={photoData.date} />
+      <Photo title={photoData.title} url={photoData.url} explanation={photoData.explanation} date={photoData.date} copyright={photoData.copyright} />
     </div>
   );
 }
